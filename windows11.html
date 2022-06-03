@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            *
+            {
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+              overflow: hidden;
+            }
+            video{
+                position: absolute;
+                top: 0px;
+                background-size: cover;
+            }
+            div{
+                background-color: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    
+
+            }
+           
+           
+            main1{
+                justify-self: center;
+                right:500px;
+                bottom: 0px;
+
+            }
+          
+            div.right{
+                position: absolute;
+                right: 5px;
+                justify-self: flex-end;
+                bottom: -5px;
+                margin: -2px;
+            
+                
+                
+
+            }
+            .startmenu{
+            position: absolute;
+            bottom: -650px;
+            height: 85%;
+            right: 500px;
+            transition-delay: 0.3ms;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <video src="video.webm" type="video/webm" autoplay muted></video>
+        <div class="main"><pre>                                                                  </pre>
+         <img class="main1" src="icons.PNG" onclick="down()">
+         <pre>                                       </pre>
+         <img class="right" src="taskbarright.PNG"  onclick="work()">
+
+        </div>
+        <img src="startmenu.PNG"class="startmenu"onclick="work()">
+        
+            
+       <script>
+           
+function down()
+{
+    let a=document.getElementsByClassName("main1")[0]
+let b=document.getElementsByClassName("startmenu")[0]
+    if(b.style.bottom=="-650px")
+    {
+b.style.bottom="10px"
+    }
+    else{
+        b.style.bottom="-650px"
+    }
+}
+function work()
+{
+    alert("sorry this function is currently in work :- Bot");
+}
+
+
+       </script> 
+    </body>
+</html>

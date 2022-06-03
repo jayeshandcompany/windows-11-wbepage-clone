@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(bg.jpeg);
+                background-position: top;
+
+            }
+            h1{
+                text-align: inherit;
+                
+                font-family:cursive;
+                
+        font-size: 100px;
+                color: gold;
+            }
+            div{
+                text-align: center;
+                color: white;
+                font-size: 30px;
+            }
+            .submit{
+                background-color: greenyellow;
+                font-size: 25px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+
+            }
+            .credit{
+                position: absolute;
+                bottom: 0px;
+                right: 15px;
+                color: red;
+                font-size: 15px;
+            }
+            
+        </style>
+    </head>
+        <body>
+            <center>
+            <h1>WINDOWS-11 TRIAL</h1>
+            </center>
+            <div class="trial">
+                <label>
+                    please enter your name :   
+                    </label>
+                    <input type="text" id="name">
+                    <br>
+                    <br>
+                   <label> please enter your phone number</label>
+                   <select>
+                       <option>+91</option>
+                   </select>
+                    <input type="text">
+                    <br>
+                    <br>
+                <center><a href="windows11.html"><button class="submit" onclick="launch()">Submit</button></center>
+                </a>            </div>
+            <br>
+            <p class="credit" > with love(laal dil) :-JAYESH JAIN</p>
+            <script>
+                function launch()
+                {
+                   
+                    var a=document.getElementById('name').value;
+                   alert(a+" Thanks for singing in you will be redirected to windows 11 :- Jayesh Bot");
+                                  }
+            </script>
+
+        </body>
+  
+</html>
